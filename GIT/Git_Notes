@@ -44,12 +44,13 @@ Creating remote repository in github
 	click on "new repository" --> give a name "DevOps_Classes" --> "create reopository" 
 
 3. copy the repo URL from Github:
-	https://github.com/nageshvkn/flipkart-ecomerce.git
+	https://github.com/swapnilmahajan-git/DevOps_Classes.git
 
 4. Clone the source code from remote repository using 'git clone' command
-	git clone https://github.com/swapnilmahajan-git/flipkart-ecomerce.git
+	$ git clone https://github.com/swapnilmahajan-git/DevOps_Classes.git
 
-5. cd "flipkart-ecomerce" and observe ".git" folder. ".git" is called as "Local Reposiotory".
+5. 	$ cd DevOps_Classes 
+		and observe ".git" folder. ".git" is called as "Local Reposiotory".
 
 6. Create some sample code and submit the code to remote repo.
 
