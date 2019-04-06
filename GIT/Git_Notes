@@ -136,32 +136,33 @@ Note: If you want to skip the staging, you need to commit all pending changes.
 
 # Creating up Local repository
 1. create/initialize a local repository with 'git init' command
-$ git init DevOps_Classess
+	$ git init <folder-name>
+	$ git remote add <folder-name> <repo-url>
+	$ git push <folder-name>
+	$ git push --set-upstream <folder-name> master
+
 
 
 2. Observe the local repository
-ls -a (you can see the .git folder. this is called the "local repository")
+	$ ls -a 
+		(you can see the .git folder. this is called the "local repository")
 
-3.
-create some source code.. ex: vim Login.java
+3.create some source code.. ex: vim Login.java
 
-4.
-Adding the file to STAGE.
-$ git add Login.java
+4.Adding the file to STAGE.
+	$ git add <filename>
 
-5.
-Commiting the file to local repository
-$ git commit Login.java -m "lgoin module code"
+5.Commiting the file to local repository
+	$ git commit <filename> -m "lgoin module code"
 
-6.
-Check the log of Login.java using log command.
-$ git log Login.java
+6.Check the log of Login.java using log command.
+	$ git log <filename>
 
 
 Day-4
 ======
 # History - Deep Dive
-	$ git log Login.java
+	$ git log <filename>
 	$ git log
 
 	Options:
@@ -170,7 +171,7 @@ Day-4
 		- git log --since="2016/12/13"
 		- git log --until="2016/12/13"
 		- git log --grep="DB code"		
-		- git log --oneline (if we want to see logs on high level that time we can use this command)
+		- git log --oneline (if we want to see logs on high level that time we can use this command ie. only commit ids and msg)
 
 #Qn.
 Show me all logs committed by user "Ram" AND has a commit message "math function" in it.
@@ -183,34 +184,35 @@ Day-5
 # GIT Commands
 
 1.  
-	git status 
+	$ git status 
 
-	git diff Login.java (if file is already present in remote repo and we are something modify in this file that time we can use this command)
+	$ git diff <filename> (if file is already present in remote repo and we are something modify in this file that time we can use this command)
 		    (Note :- This command is useful on existing file).
 
-	git diff --staged Login.java (if the file is added (i.e git add coomand) into the stage area then you want see the changes that time we can use this command)
+	$ git diff --staged <filename> (if the file is added (i.e git add coomand) into the stage area then you want see the changes that time we can use this command)
 
-	git diff  089871935..fc894a6bf6d2e (if we want to see difference between two files)(use commit ids).
+	$ git diff  089871935..fc894a6bf6d2e (if we want to see difference between two files)(use commit ids).
 
 
 2. Deleting a file
 
-	A.) git rm OMS.java (NOte:- If we are remove a file from repo, then you must commit it again this file).
-	    git commit OMS.java -m "comment"
+	A.) $ git rm <filename> (NOte:- If we are remove a file from repo, then you must commit it again this file).
+	    $ git commit <filename> -m "comment"
        
 	Suppose if we want the deleted file again then use the below command 
 	
-	B.) git checkout shavalue(i.e 123abc..)
- (Note :- Deletion is not permantaly in git we can get any file anytime from previous version)
+	B.) $ git checkout shavalue(i.e 123abc..)
+ 		(Note :- Deletion is not permantaly in git we can get any file anytime from previous version)
 
 
 4. Renaming a file/folder
-	A.) git mv Login.java Login1.java
-		git commit -m "rename Login"
+	A.) $ git mv Login.java Login1.java
+		$ git commit -m "rename Login"
+		$ git push
 			
 #
 Carry the history for new file from old file
-	- git log --follow Login.java
+	- $ git log --follow Login.java
 
 
 
