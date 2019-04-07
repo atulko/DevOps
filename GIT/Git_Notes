@@ -215,5 +215,36 @@ Carry the history for new file from old file
 	- $ git log --follow Login.java
 
 
+Day-6
+=======
+# BRANCHING
+	A. What is a branch?
+	B. Why and When we create a branch?
+	C. Branching Stratogy overview
+
+
+# List all the branches
+	$ git branch
+	
+# Creating a new branch
+	$ git branch dev_1.2.3
+
+# List all remote branches
+	$ git branch -r
+
+		
+# Switching from one branch to another
+	$ git checkout dev_1.2.3
+		
+# Creating and switching to a newly created branch
+	$ git checkout -b dev_1.2.4
+
+#
+HEAD
+
+HEAD is a pointer in git which
+	- Always points to the latest commit in the repository
+	- Always points to tip of the current reposiotory
+	- Always points to parent of the next commit
 
 
