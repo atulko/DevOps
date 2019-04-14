@@ -328,7 +328,6 @@ Verify the chages.
 # git push
 
 
-
 MERGING W/ CONFLICT:
 =================
 
@@ -375,9 +374,10 @@ Git merge command merges the changes from dev_1.2.3 to master.
 If two users modify the same file in source and target branches and if the same line has different content, git can't decide which user's code it has to take. we call this situation as conflict.
 
 # How do you resolve the conflict: 
-- Open the conflict file--> remove conflict markers-->select the right content.
+- Open the conflict file--> remove conflict markers-->select the right content. (<<<<<<<<   >>>>>>>>>)
 - git add
 - git commit
+- git push
 
 
 #	
