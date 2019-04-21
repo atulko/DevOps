@@ -390,6 +390,8 @@ git remote
 Store credentials:
 $ git config credential.helper store
 
+====
+
 
 # If we want to merge specific command from another branch in base branch that time we can use the following command
 $ git cherry-pick <SHA-VALUE>
